@@ -1,0 +1,173 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* Agrega cualquier estilo adicional que desees */
+}
+
+.container{
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+@media(min-width:640px){
+    .container{
+        @apply px-6;
+    }
+}
+
+@media(min-width:1024px){
+    .container{
+        @apply px-8;
+    }
+}
+
+.text-shadow{
+   text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.float{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 40px;
+    box-shadow: 2px 2px 3px #3a3737;
+    z-index: 100;
+}
+
+.my-float{
+	margin-top:0px;
+}
+
+/*
+*/
+.navbar > ul > li > a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 3px;
+    left: 0;
+    background-color: #1bac91;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  .navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
+    visibility: visible;
+    width: 100%;
+  }
+  
+  .navbar a:hover, .navbar .active, .navbar li:hover > a {
+    color: #fff;
+  }
+  
+/*
+    CKeditor
+*/
+
+.ckeditor ul{
+    @apply list-disc list-inside pl-4 mb-2;
+}
+
+.ckeditor ol{
+    @apply list-decimal list-inside pl-2 mb-2;
+}
+
+.ckeditor hr{
+    @apply my-4;
+} 
+
+.ckeditor h1{
+    @apply text-3xl font-bold text-gray-800 my-2;
+}
+
+.ckeditor h2{
+    @apply text-2xl font-extrabold tracking-tight text-gray-800 sm:text-2xl my-2;
+}
+
+.ckeditor h3{
+    @apply text-xl font-bold text-gray-800 my-2;
+}
+
+
+.ckeditor .marker{
+    @apply bg-yellow-200;
+}
+.ckeditor blockquote {
+    @apply p-4 italic border-l-4 border-turqueza-500 mb-2 ml-2;
+}
+
+.ckeditor p a{
+    @apply text-blue-500 hover:underline;
+}
+
+.btn {
+    @apply py-2 px-4 rounded cursor-pointer
+}
+
+.btn-success {
+    @apply bg-green-600 hover:bg-green-700 
+}
+
+.btn-info {
+    @apply bg-cyan-400 hover:bg-cyan-500
+}
+
+.btn-warning {
+    @apply bg-orange-400 hover:bg-orange-500
+}
+
+.btn-primary {
+    @apply bg-cyan-700 hover:bg-cyan-800
+}
+
+.btn-danger {
+    @apply bg-red-500 hover:bg-red-600
+}
+
+.btn-xs{
+    @apply text-xs
+}
+
+.btn-sm{
+    @apply text-sm
+}
+
+
+.opacity-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad aquí */
+    pointer-events: none; /* Evita que la capa capture eventos de ratón */
+    opacity: 0.5;
+}
+
+.opacity-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad aquí */
+    pointer-events: none; /* Evita que la capa capture eventos de ratón */
+    opacity: 1;
+}
+
+.opacity-img-full {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad aquí */
+    pointer-events: none; /* Evita que la capa capture eventos de ratón */
+    opacity: 3;
+}
