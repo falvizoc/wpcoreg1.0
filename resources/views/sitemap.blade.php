@@ -4,84 +4,48 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-    {{-- Urls estaticas --}}
+    {{-- Urls estáticas --}}
+
+    <!-- Home -->
     <url>
-        <loc>{{route('home.index')}}/</loc>
+        <loc>{{route('home.index')}}</loc>
+        <lastmod>2023-02-13T17:18:32+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+
+    <!-- Sobre Nosotros -->
+    <url>
+        <loc>{{route('sobre-nosotros')}}</loc>
         <lastmod>2023-02-13T17:18:32+00:00</lastmod>
         <priority>0.80</priority>
-      </url>
-      <url>
-        <loc>{{route('home.index')}}/sobre-nosotros</loc>
-        <lastmod>2023-02-13T17:18:32+00:00</lastmod>
-        <priority>1.00</priority>
-      </url>
-      <url>
-        <loc>{{route('home.index')}}/derecho-de-familia/alimentos</loc>
-        <lastmod>2023-02-13T17:18:32+00:00</lastmod>
-        <priority>1.00</priority>
-      </url>
-      <url>
-        <loc>{{route('home.index')}}/derecho-de-familia/regimen-de-comunicacion-y-cuidado-personal</loc>
-        <lastmod>2023-02-13T17:18:32+00:00</lastmod>
-        <priority>1.00</priority>
-      </url>
-      <url>
-        <loc>{{route('home.index')}}/derecho-de-familia/divorcio</loc>
-        <lastmod>2023-02-13T17:18:32+00:00</lastmod>
-        <priority>1.00</priority>
-      </url>
-      <url>
-        <loc>{{route('home.index')}}/derecho-de-familia/violencia-familiar</loc>
-        <lastmod>2023-02-13T17:18:32+00:00</lastmod>
-        <priority>1.00</priority>
-      </url>
-      <url>
-        <loc>{{route('home.index')}}/derecho-de-familia/otros-reclamos-de-familia</loc>
-        <lastmod>2023-02-13T17:18:32+00:00</lastmod>
-        <priority>1.00</priority>
-      </url>
-      <url>
-        <loc>{{route('home.index')}}/derecho-laboral/despidos</loc>
-        <lastmod>2023-02-13T17:18:32+00:00</lastmod>
-        <priority>1.00</priority>
-      </url>
-      <url>
-        <loc>{{route('home.index')}}/derecho-laboral/accidentes-y-enfermedades-de-trabajo</loc>
-        <lastmod>2023-02-13T17:18:32+00:00</lastmod>
-        <priority>1.00</priority>
-      </url>
-      <url>
-        <loc>{{route('home.index')}}/derecho-penal</loc>
-        <lastmod>2023-02-13T17:18:32+00:00</lastmod>
-        <priority>1.00</priority>
-      </url>
-      <url>
-        <loc>{{route('home.index')}}/derecho-previsional</loc>
-        <lastmod>2023-02-13T17:18:32+00:00</lastmod>
-        <priority>1.00</priority>
-      </url>
-      <url>
-        <loc>{{route('home.index')}}/derecho-civil-y-comercial</loc>
-        <lastmod>2023-02-13T17:18:32+00:00</lastmod>
-        <priority>1.00</priority>
-      </url>
-      <url>
-        <loc>{{route('home.index')}}/contacto</loc>
+    </url>
+
+    <!-- Servicios -->
+    <url>
+        <loc>{{route('servicios')}}</loc>
         <lastmod>2023-02-13T17:18:32+00:00</lastmod>
         <priority>0.80</priority>
-      </url>
-      <url>
-        <loc>{{route('home.index')}}/blog</loc>
+    </url>
+
+    <!-- Proyectos -->
+    <url>
+        <loc>{{route('proyectos')}}</loc>
         <lastmod>2023-02-13T17:18:32+00:00</lastmod>
-        <priority>1.00</priority>
-      </url>
-      
-    @foreach ($posts as $post)
-        <url>
-            <loc>{{route('posts.show',$post)}}</loc>
-            <lastmod>{{$post->updated_at->tz('UTC')->toAtomString()}}</lastmod>
-            <priority>0.80</priority>
-            <changefreq>daily</changefreq>
-        </url>
-    @endforeach
+        <priority>0.80</priority>
+    </url>
+
+    <!-- Contacto -->
+    <url>
+        <loc>{{route('contacto')}}</loc>
+        <lastmod>2023-02-13T17:18:32+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- Solicitar Cotización -->
+    <url>
+        <loc>{{route('solicitar-cotizacion')}}</loc>
+        <lastmod>2023-02-13T17:18:32+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+
 </urlset>

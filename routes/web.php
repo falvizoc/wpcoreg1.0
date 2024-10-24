@@ -21,10 +21,4 @@ Route::get('solicitar-cotizacion', [HomeController::class, 'contacto'])->name('s
 
 Route::get('contacto', [HomeController::class, 'contacto'])->name('contacto');
 
-# Rutas Blog
-// Route::get('blog', [PostController::class, 'index'])->name('blog.index');
-// Route::get('blog/{post}', [PostController::class, 'show'])->name('posts.show');
-// Route::get('blog/categoria/{categoria}', [PostController::class, 'categoria'])->name('blog.posts.categoria');
-// Route::get('blog/etiqueta/{etiqueta}', [PostController::class, 'etiqueta'])->name('posts.etiqueta');
-
 Route::get('sitemap.xml', [SitemapController::class, 'sitemap']);
